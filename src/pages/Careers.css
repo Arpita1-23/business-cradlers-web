@@ -1,0 +1,83 @@
+.careers-page { font-family: 'Outfit', sans-serif; background: #0b0f14; color: #c4bbb0; min-height: 100vh; }
+
+.careers-nav { display: flex; align-items: center; justify-content: space-between; padding: 0 56px; height: 66px; background: #0b0f14; border-bottom: 1px solid #1c2530; position: sticky; top: 0; z-index: 100; }
+.careers-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.careers-logo-mark { width: 36px; height: 36px; border: 1.5px solid #b87333; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.careers-logo-mark svg { width: 18px; height: 18px; }
+.careers-logo-name { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 700; color: #e6ddd0; line-height: 1; }
+.careers-logo-name span { color: #b87333; }
+.careers-logo-sub { font-size: 9px; color: #4a5560; letter-spacing: 2px; text-transform: uppercase; margin-top: 2px; }
+.careers-back { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #6a7585; text-decoration: none; border: 1px solid #1c2530; padding: 8px 18px; border-radius: 4px; transition: all 0.2s; }
+.careers-back svg { width: 14px; height: 14px; }
+.careers-back:hover { border-color: #b87333; color: #b87333; }
+
+.careers-hero { padding: 80px 0 60px; border-bottom: 1px solid #1c2530; }
+.careers-hero-inner { max-width: 100%; padding: 0 56px; }
+.careers-eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.careers-eyebrow-line { width: 32px; height: 1.5px; background: #b87333; display: inline-block; }
+.careers-eyebrow-txt { font-size: 11px; color: #b87333; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; }
+.careers-title { font-family: 'Cormorant Garamond', serif; font-size: 72px; font-weight: 700; color: #e6ddd0; line-height: 1.0; letter-spacing: -2px; margin-bottom: 24px; }
+.careers-title em { color: #b87333; font-style: italic; font-weight: 400; }
+.careers-subtitle { font-size: 17px; color: #8a9aaa; font-weight: 300; line-height: 1.8; max-width: 580px; margin-bottom: 36px; }
+.careers-hero-tags { display: flex; gap: 12px; flex-wrap: wrap; }
+.careers-hero-tags span { background: #0e1318; border: 1px solid #1c2530; border-radius: 100px; padding: 8px 18px; font-size: 13px; color: #8a9aaa; }
+
+.careers-inner { max-width: 100%; padding: 0 56px; }
+.careers-section-title { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 700; color: #e6ddd0; letter-spacing: -1px; margin-bottom: 40px; line-height: 1; }
+.careers-section-title em { color: #b87333; font-style: italic; font-weight: 400; }
+
+.careers-perks { padding: 80px 0; border-bottom: 1px solid #1c2530; }
+.perks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.perk-card { background: #0e1318; border: 1px solid #1c2530; border-radius: 14px; padding: 32px 28px; transition: border-color 0.3s, transform 0.3s; }
+.perk-card:hover { border-color: #b87333; transform: translateY(-4px); }
+.perk-icon { font-size: 32px; margin-bottom: 16px; }
+.perk-title { font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 600; color: #e6ddd0; margin-bottom: 10px; }
+.perk-desc { font-size: 14px; color: #8a9aaa; line-height: 1.8; font-weight: 300; }
+
+.careers-roles { padding: 80px 0; border-bottom: 1px solid #1c2530; }
+.careers-roles-sub { font-size: 16px; color: #6a7585; margin-bottom: 40px; font-weight: 300; line-height: 1.7; max-width: 600px; }
+.roles-list { display: flex; flex-direction: column; gap: 16px; }
+.role-card { background: #0e1318; border: 1px solid #1c2530; border-radius: 14px; padding: 36px 40px; display: flex; align-items: center; justify-content: space-between; gap: 40px; transition: border-color 0.3s; }
+.role-card:hover { border-color: #b87333; }
+.role-card-left { flex: 1; }
+.role-tags { display: flex; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+.role-type { background: #1a2028; border: 1px solid #b87333; color: #b87333; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 4px; }
+.role-loc { font-size: 12px; color: #6a7585; padding: 4px 12px; background: #0b0f14; border: 1px solid #1c2530; border-radius: 4px; }
+.role-exp { font-size: 12px; color: #6a7585; padding: 4px 12px; background: #0b0f14; border: 1px solid #1c2530; border-radius: 4px; }
+.role-title { font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; color: #e6ddd0; margin-bottom: 12px; letter-spacing: -0.3px; }
+.role-desc { font-size: 14px; color: #8a9aaa; line-height: 1.8; font-weight: 300; margin-bottom: 18px; max-width: 600px; }
+.role-skills { display: flex; flex-wrap: wrap; gap: 8px; }
+.role-skill { background: #0b0f14; border: 1px solid #1c2530; border-radius: 4px; padding: 4px 12px; font-size: 11px; color: #6a7585; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; }
+.role-apply-btn { display: inline-flex; align-items: center; gap: 10px; background: #b87333; color: #0b0f14; padding: 13px 28px; border-radius: 4px; font-size: 13px; font-family: 'Outfit', sans-serif; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; transition: all 0.2s; white-space: nowrap; }
+.role-apply-btn svg { width: 14px; height: 14px; }
+.role-apply-btn:hover { background: #cf9045; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(184,115,51,0.3); }
+
+.careers-contact { padding: 80px 0; }
+.careers-contact-card { background: #0e1318; border: 1px solid #1c2530; border-radius: 16px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px; }
+.careers-contact-title { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 700; color: #e6ddd0; margin-bottom: 14px; letter-spacing: -0.5px; }
+.careers-contact-desc { font-size: 15px; color: #8a9aaa; font-weight: 300; line-height: 1.8; max-width: 420px; }
+.careers-contact-right { display: flex; flex-direction: column; gap: 12px; flex-shrink: 0; }
+.careers-email-btn { display: inline-flex; align-items: center; gap: 10px; background: #b87333; color: #0b0f14; padding: 14px 32px; border-radius: 4px; font-size: 13px; font-family: 'Outfit', sans-serif; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; transition: all 0.2s; white-space: nowrap; }
+.careers-email-btn svg { width: 14px; height: 14px; }
+.careers-email-btn:hover { background: #cf9045; }
+.careers-wa-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: #1a2f1a; border: 1px solid #2a4a2a; color: #3dcc72; padding: 13px 32px; border-radius: 4px; font-size: 13px; font-family: 'Outfit', sans-serif; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+.careers-wa-btn:hover { border-color: #3dcc72; }
+
+.careers-footer { border-top: 1px solid #1c2530; padding: 24px 56px; display: flex; align-items: center; justify-content: space-between; }
+.careers-footer span { font-size: 12px; color: #2e3840; }
+.careers-footer a { font-size: 12px; color: #4a5560; text-decoration: none; transition: color 0.2s; }
+.careers-footer a:hover { color: #b87333; }
+
+@media(max-width: 960px) {
+  .careers-nav { padding: 0 24px; }
+  .careers-hero-inner { padding: 0 24px; }
+  .careers-inner { padding: 0 24px; }
+  .careers-title { font-size: 48px; }
+  .perks-grid { grid-template-columns: repeat(2, 1fr); }
+  .role-card { flex-direction: column; align-items: flex-start; padding: 28px 24px; }
+  .careers-contact-card { flex-direction: column; padding: 36px 28px; }
+  .careers-footer { padding: 24px; flex-direction: column; gap: 8px; }
+}
+@media(max-width: 600px) {
+  .perks-grid { grid-template-columns: 1fr; }
+}

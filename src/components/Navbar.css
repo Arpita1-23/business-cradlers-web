@@ -1,0 +1,113 @@
+.nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 48px; height: 66px;
+  background: #0b0f14; border-bottom: 1px solid #1c2530;
+  position: sticky; top: 0; z-index: 200;
+}
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.logo-mark {
+  width: 36px; height: 36px; border: 1.5px solid #b87333;
+  border-radius: 8px; display: flex; align-items: center; justify-content: center;
+}
+.logo-mark svg { width: 18px; height: 18px; }
+.logo-name { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 700; color: #e6ddd0; line-height: 1; }
+.logo-name span { color: #b87333; }
+.logo-sub { font-size: 9px; color: #4a5560; letter-spacing: 2px; text-transform: uppercase; margin-top: 2px; }
+
+.nav-links { display: flex; gap: 4px; list-style: none; }
+.nav-item { position: relative; }
+.nav-link {
+  display: flex; align-items: center; gap: 4px;
+  font-size: 13px; color: #6a7585; text-decoration: none;
+  font-weight: 400; letter-spacing: 0.2px;
+  padding: 8px 14px; border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+.nav-link:hover { color: #c4bbb0; background: #0e1318; }
+.nav-item.active .nav-link { color: #b87333; }
+.nav-chevron { width: 10px; height: 10px; transition: transform 0.2s; }
+.nav-item.active .nav-chevron { transform: rotate(180deg); }
+
+.nav-right { display: flex; align-items: center; gap: 16px; }
+.nav-tel { font-size: 12px; color: #4a5560; }
+.nav-tel span { color: #b87333; }
+.btn-nav {
+  background: transparent; color: #b87333; border: 1px solid #b87333;
+  padding: 8px 20px; border-radius: 4px; font-size: 12px;
+  font-family: 'Outfit', sans-serif; font-weight: 600; cursor: pointer;
+  letter-spacing: 1px; text-transform: uppercase; transition: all 0.22s;
+}
+.btn-nav:hover { background: #b87333; color: #0b0f14; }
+
+/* MEGA MENU */
+.mega-menu {
+  position: fixed; top: 66px; left: 0; right: 0;
+  background: #0b0f14; border-bottom: 1px solid #1c2530;
+  z-index: 199; padding: 40px 0;
+  opacity: 0; visibility: hidden; transform: translateY(-8px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.mega-menu.mega-open { opacity: 1; visibility: visible; transform: translateY(0); }
+
+.mega-inner { max-width: 1200px; margin: 0 auto; padding: 0 56px; }
+
+.mega-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px; font-weight: 600; color: #b87333;
+  letter-spacing: 3px; text-transform: uppercase;
+  margin-bottom: 28px; padding-bottom: 16px;
+  border-bottom: 1px solid #1c2530;
+}
+
+.mega-cols { display: grid; grid-template-columns: 1fr 1fr 240px; gap: 48px; }
+
+.mega-col-title {
+  font-size: 10px; font-weight: 700; color: #4a5560;
+  letter-spacing: 2px; text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.mega-col-links { display: flex; flex-direction: column; gap: 4px; }
+
+.mega-link {
+  display: block; padding: 10px 12px; border-radius: 8px;
+  text-decoration: none; transition: background 0.2s;
+}
+.mega-link:hover { background: #0e1318; }
+.mega-link-name { font-size: 14px; font-weight: 500; color: #c4bbb0; margin-bottom: 2px; transition: color 0.2s; }
+.mega-link:hover .mega-link-name { color: #b87333; }
+.mega-link-desc { font-size: 12px; color: #4a5560; font-weight: 300; }
+
+.mega-cta-card {
+  background: #0e1318; border: 1px solid #1c2530;
+  border-radius: 12px; padding: 24px;
+  height: 100%;
+}
+.mega-cta-tag { font-size: 10px; color: #b87333; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; margin-bottom: 10px; }
+.mega-cta-txt { font-size: 13px; color: #6a7585; line-height: 1.7; font-weight: 300; margin-bottom: 20px; }
+.mega-cta-btn {
+  background: #b87333; color: #0b0f14; border: none;
+  padding: 10px 20px; border-radius: 4px; font-size: 12px;
+  font-family: 'Outfit', sans-serif; font-weight: 700;
+  cursor: pointer; letter-spacing: 1px; text-transform: uppercase;
+  width: 100%; transition: background 0.2s;
+}
+.mega-cta-btn:hover { background: #cf9045; }
+
+.mega-overlay {
+  position: fixed; inset: 0; top: 66px;
+  background: rgba(0,0,0,0.4); z-index: 198;
+}
+
+.theme-toggle {
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid #1c2530;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: #6a7585;
+  transition: all 0.2s;
+}
+.theme-toggle svg { width: 16px; height: 16px; }
+.theme-toggle:hover { border-color: #b87333; color: #b87333; }

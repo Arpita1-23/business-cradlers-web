@@ -1,0 +1,77 @@
+.techstack {
+  background: #080c11;
+  border-top: 1px solid #1c2530;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.ts-header {
+  text-align: center;
+  margin-bottom: 56px;
+  padding: 0 40px;
+}
+.ts-eyebrow {
+  display: flex; align-items: center;
+  justify-content: center; gap: 12px; margin-bottom: 16px;
+}
+.ts-eyebrow-line { width: 32px; height: 1.5px; background: #b87333; display: inline-block; }
+.ts-eyebrow-txt { font-size: 11px; color: #b87333; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; }
+.ts-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px; font-weight: 700;
+  color: #e6ddd0; letter-spacing: -1px; line-height: 1;
+}
+.ts-title em { color: #b87333; font-style: italic; font-weight: 400; }
+
+.ts-wall { display: flex; flex-direction: column; gap: 16px; }
+
+.ts-row {
+  display: flex; gap: 16px;
+  width: max-content;
+}
+.ts-row-left { animation: scroll-left 30s linear infinite; }
+.ts-row-right { animation: scroll-right 30s linear infinite; }
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.ts-item {
+  display: flex; align-items: center; gap: 12px;
+  background: #0e1318; border: 1px solid #1c2530;
+  border-radius: 10px; padding: 14px 22px;
+  white-space: nowrap;
+  transition: border-color 0.2s, transform 0.2s;
+  cursor: default;
+}
+.ts-item:hover { border-color: #b87333; transform: translateY(-2px); }
+
+.ts-icon {
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.ts-icon svg { width: 28px; height: 28px; }
+.ts-emoji { font-size: 22px; }
+
+.ts-name {
+  font-size: 14px; font-weight: 600;
+  color: #c4bbb0; letter-spacing: 0.2px;
+}
+
+.ts-row:hover { animation-play-state: paused; }
+
+@media(max-width: 960px) {
+  .ts-title { font-size: 38px; }
+}
+
+[data-theme="light"] .techstack { background: #f0ebe2; border-top-color: #e0d8cc; }
+[data-theme="light"] .ts-item { background: #ffffff; border-color: #e0d8cc; }
+[data-theme="light"] .ts-item:hover { border-color: #b87333; }
+[data-theme="light"] .ts-name { color: #1a1208; }
+[data-theme="light"] .ts-title { color: #1a1208; }

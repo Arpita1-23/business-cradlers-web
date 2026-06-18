@@ -1,0 +1,92 @@
+.team { background:#080c11; border-top:1px solid #1c2530; padding:110px 0; }
+.team-inner { max-width:100%; margin:0 auto; padding:0 40px; }
+
+.team-header { margin-bottom:72px; }
+.team-eyebrow { display:flex; align-items:center; gap:12px; margin-bottom:20px; }
+.team-eyebrow-line { width:32px; height:1.5px; background:#b87333; display:inline-block; }
+.team-eyebrow-txt { font-size:11px; color:#b87333; letter-spacing:3px; text-transform:uppercase; font-weight:600; }
+.team-title { font-family:'Cormorant Garamond',serif; font-size:58px; font-weight:700; color:#e6ddd0; line-height:1.0; letter-spacing:-1.5px; margin-bottom:16px; }
+.team-title em { color:#b87333; font-style:italic; font-weight:400; }
+.team-subtitle { font-size:17px; color:#8a9aaa; font-weight:300; line-height:1.8; max-width:480px; }
+
+.team-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-bottom:48px; }
+
+.team-card {
+  background:#0e1318;
+  border:1px solid #1c2530;
+  border-radius:16px;
+  padding:32px 28px;
+  display:flex; flex-direction:column; gap:0;
+  transition:border-color 0.3s, transform 0.3s;
+  position:relative; overflow:hidden;
+}
+.team-card::before {
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg, #b87333, transparent);
+  opacity:0; transition:opacity 0.3s;
+}
+.team-card:hover { border-color:#2e3840; transform:translateY(-4px); box-shadow:0 20px 40px rgba(0,0,0,0.3); }
+.team-card:hover::before { opacity:1; }
+
+.team-card-top { display:flex; align-items:center; gap:16px; margin-bottom:20px; }
+
+.team-avatar {
+  width:56px; height:56px; border-radius:50%;
+  background:#0b0f14; border:2px solid #b87333;
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0;
+}
+.team-initial { font-family:'Cormorant Garamond',serif; font-size:20px; font-weight:700; }
+
+.team-card-header {}
+.team-name { font-family:'Outfit',sans-serif; font-size:17px; font-weight:600; color:#e6ddd0; margin-bottom:4px; }
+.team-role { font-size:12px; font-weight:500; letter-spacing:0.5px; }
+
+.team-desc { font-size:14px; color:#8a9aaa; line-height:1.85; font-weight:300; margin-bottom:24px; flex:1; }
+
+.team-skills { display:flex; flex-wrap:wrap; gap:7px; }
+.team-skill {
+  background:#0b0f14; border:1px solid #1c2530;
+  border-radius:4px; padding:4px 10px;
+  font-size:10px; color:#6a7a8a;
+  font-weight:500; letter-spacing:0.8px; text-transform:uppercase;
+  transition:all 0.2s;
+}
+.team-card:hover .team-skill { border-color:#2e3840; color:#8a9aaa; }
+
+.team-bottom {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:32px 40px;
+  background:#0e1318; border:1px solid #1c2530; border-radius:12px;
+  position:relative; overflow:hidden;
+}
+.team-bottom::before {
+  content:''; position:absolute; inset:0;
+  background:radial-gradient(ellipse at right center, rgba(184,115,51,0.05) 0%, transparent 60%);
+  pointer-events:none;
+}
+.team-bottom-title { font-family:'Cormorant Garamond',serif; font-size:24px; font-weight:600; color:#c4bbb0; font-style:italic; margin-bottom:6px; }
+.team-bottom-sub { font-size:14px; color:#4a5a6a; font-weight:300; }
+.team-bottom-btn {
+  display:inline-flex; align-items:center; gap:10px;
+  background:#b87333; color:#0b0f14;
+  border:none; padding:13px 28px; border-radius:4px;
+  font-size:13px; font-family:'Outfit',sans-serif;
+  font-weight:700; cursor:pointer; letter-spacing:1px;
+  text-transform:uppercase; text-decoration:none;
+  transition:all 0.2s; position:relative; z-index:1;
+  white-space:nowrap;
+}
+.team-bottom-btn svg { width:14px; height:14px; }
+.team-bottom-btn:hover { background:#cf9045; transform:translateY(-2px); box-shadow:0 8px 24px rgba(184,115,51,0.25); }
+
+@media(max-width:960px) {
+  .team-inner { padding:0 24px; }
+  .team-grid { grid-template-columns:repeat(2,1fr); }
+  .team-title { font-size:42px; }
+  .team-bottom { flex-direction:column; gap:24px; text-align:center; padding:28px 24px; }
+}
+@media(max-width:600px) {
+  .team-grid { grid-template-columns:1fr; }
+}
