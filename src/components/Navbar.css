@@ -164,6 +164,9 @@
   }
   .mobile-menu a:last-child { border-bottom: none; }
   .mobile-menu a:hover { color: #b87333; }
+  .nav { overflow-x: hidden; max-width: 100vw; }
+  .logo-sub { font-size: 7px; letter-spacing: 1px; }
+  .logo-name { font-size: 15px; }
 }
 
 @media (min-width: 769px) {

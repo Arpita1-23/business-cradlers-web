@@ -194,18 +194,20 @@
 }
 
 @media (max-width: 768px) {
-  .hero { display: flex; flex-direction: column; min-height: auto; }
-  .hero-content { grid-template-columns: 1fr; padding: 0 16px; gap: 0; }
+  overflow-x: hidden;
+  .hero { display: flex; flex-direction: column; min-height: auto; overflow-x: hidden; max-width: 100vw; }
+  .hero-content { grid-template-columns: 1fr; padding: 0 16px; gap: 0; overflow-x: hidden; }
   .hero-left { padding: 40px 0 32px; }
   .hero-right { padding: 0 0 40px; min-height: auto; }
-  .hl-plain { font-size: 52px; letter-spacing: -2px; }
-  .hl-italic { font-size: 58px; }
-  .hl-outline { font-size: 52px; }
+  .hl-plain { font-size: 42px; letter-spacing: -1.5px; }
+  .hl-italic { font-size: 46px; letter-spacing: -1px; }
+  .hl-outline { font-size: 42px; letter-spacing: -1.5px; -webkit-text-stroke: 1px #e6ddd0; }
+  .headline { margin-bottom: 20px; }
   .hero-para { font-size: 15px; }
   .cta-row { flex-direction: column; gap: 10px; }
   .btn-primary, .btn-ghost, .btn-whatsapp { width: 100%; justify-content: center; }
   .stats-row { flex-wrap: wrap; gap: 20px; }
   .stat-div { display: none; }
   .service-grid { grid-template-columns: 1fr 1fr; }
-  .marquee-strip { padding: 10px 0; }
+  .marquee-strip { padding: 10px 0; overflow: hidden; }
 }
