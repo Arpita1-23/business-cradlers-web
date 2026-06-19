@@ -59,3 +59,14 @@
   .port-title{font-size:42px}
   .port-card-title{font-size:28px}
 }
+
+@media (max-width: 768px) {
+  .port-inner { padding: 0 16px; }
+  .portfolio { padding: 60px 0; }
+  .port-card { grid-template-columns: 1fr; }
+  .port-card-left { padding: 28px 20px; border-right: none; border-bottom: 1px solid #1c2530; }
+  .port-card-right { padding: 24px 20px; }
+  .port-title { font-size: 36px; }
+  .port-card-title { font-size: 26px; }
+  .port-num { font-size: 52px; }
+}

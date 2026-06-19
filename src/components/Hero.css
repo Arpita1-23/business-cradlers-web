@@ -192,3 +192,20 @@
   .hl-italic { font-size: 62px; }
   .stat-div { margin: 0 18px; }
 }
+
+@media (max-width: 768px) {
+  .hero { display: flex; flex-direction: column; min-height: auto; }
+  .hero-content { grid-template-columns: 1fr; padding: 0 16px; gap: 0; }
+  .hero-left { padding: 40px 0 32px; }
+  .hero-right { padding: 0 0 40px; min-height: auto; }
+  .hl-plain { font-size: 52px; letter-spacing: -2px; }
+  .hl-italic { font-size: 58px; }
+  .hl-outline { font-size: 52px; }
+  .hero-para { font-size: 15px; }
+  .cta-row { flex-direction: column; gap: 10px; }
+  .btn-primary, .btn-ghost, .btn-whatsapp { width: 100%; justify-content: center; }
+  .stats-row { flex-wrap: wrap; gap: 20px; }
+  .stat-div { display: none; }
+  .service-grid { grid-template-columns: 1fr 1fr; }
+  .marquee-strip { padding: 10px 0; }
+}

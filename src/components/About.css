@@ -159,3 +159,12 @@
   .about-values-grid { grid-template-columns:1fr; }
   .about-stats-grid { grid-template-columns:1fr 1fr; }
 }
+
+@media (max-width: 768px) {
+  .about-inner { padding: 0 16px; }
+  .about { padding: 60px 0; }
+  .about-top { grid-template-columns: 1fr; gap: 32px; }
+  .about-title { font-size: 36px; }
+  .about-stats-grid { grid-template-columns: 1fr 1fr; }
+  .about-values-grid { grid-template-columns: 1fr; }
+}

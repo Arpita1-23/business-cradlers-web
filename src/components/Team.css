@@ -90,3 +90,11 @@
 @media(max-width:600px) {
   .team-grid { grid-template-columns:1fr; }
 }
+
+@media (max-width: 768px) {
+  .team-inner { padding: 0 16px; }
+  .team { padding: 60px 0; }
+  .team-grid { grid-template-columns: 1fr; gap: 12px; }
+  .team-title { font-size: 36px; }
+  .team-bottom { flex-direction: column; gap: 16px; padding: 24px 16px; text-align: center; }
+}

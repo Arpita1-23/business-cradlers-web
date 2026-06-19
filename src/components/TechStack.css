@@ -70,6 +70,15 @@
   .ts-title { font-size: 38px; }
 }
 
+@media (max-width: 768px) {
+  .ts-title { font-size: 32px; }
+  .ts-header { padding: 0 16px; margin-bottom: 32px; }
+  .ts-item { padding: 10px 16px; }
+  .ts-name { font-size: 12px; }
+  .ts-icon { width: 22px; height: 22px; }
+  .ts-icon svg { width: 22px; height: 22px; }
+}
+
 [data-theme="light"] .techstack { background: #f0ebe2; border-top-color: #e0d8cc; }
 [data-theme="light"] .ts-item { background: #ffffff; border-color: #e0d8cc; }
 [data-theme="light"] .ts-item:hover { border-color: #b87333; }

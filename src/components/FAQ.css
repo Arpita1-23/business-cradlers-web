@@ -195,3 +195,12 @@
 [data-theme="light"] .modal-input { background: #faf7f2; border-color: #e0d8cc; color: #1a1208; }
 [data-theme="light"] .modal-input::placeholder { color: #cfc7b8; }
 [data-theme="light"] .modal-overlay { background: rgba(26,18,8,0.5); }
+
+@media (max-width: 768px) {
+  .faq-inner { padding: 0 16px; }
+  .faq { padding: 60px 0; }
+  .faq-grid { grid-template-columns: 1fr; }
+  .faq-side { position: static; }
+  .faq-title { font-size: 36px; }
+  .faq-question span { font-size: 14px; }
+}

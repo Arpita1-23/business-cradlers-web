@@ -138,3 +138,14 @@
   .quote-text { font-size: 24px; }
   .quote-bg-text { font-size: 160px; }
 }
+
+@media (max-width: 768px) {
+  .quote-inner { grid-template-columns: 1fr; gap: 32px; padding: 0 16px; }
+  .quote-section { padding: 60px 0; }
+  .quote-text { font-size: 22px; }
+  .quote-mark { font-size: 80px; }
+  .quote-side { border-left: none; border-top: 1px solid #1c2530; padding-left: 0; padding-top: 24px; flex-direction: row; flex-wrap: wrap; gap: 20px; }
+  .quote-author { flex-wrap: wrap; gap: 12px; }
+  .quote-divider { display: none; }
+  .quote-bg-text { font-size: 120px; }
+}

@@ -158,3 +158,11 @@
   .srv-grid { grid-template-columns: 1fr; }
   .srv-title { font-size: 36px; }
 }
+
+@media (max-width: 768px) {
+  .services-inner { padding: 0 16px; }
+  .services { padding: 60px 0; }
+  .srv-grid { grid-template-columns: 1fr; gap: 12px; }
+  .srv-title { font-size: 36px; }
+  .srv-bottom { flex-direction: column; gap: 16px; padding: 24px 16px; text-align: center; }
+}

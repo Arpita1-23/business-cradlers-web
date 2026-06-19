@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './Navbar.css'
 
 const menuItems = [
@@ -76,11 +76,7 @@ const menuItems = [
       ]
     }
   },
-  {
-    label: 'Team',
-    href: '#team',
-    mega: null
-  },
+  { label: 'Team', href: '#team', mega: null },
   {
     label: 'Careers',
     href: '#contact',
@@ -108,16 +104,13 @@ const menuItems = [
       ]
     }
   },
-  {
-    label: 'Contact',
-    href: '#contact',
-    mega: null
-  },
+  { label: 'Contact', href: '#contact', mega: null },
 ]
 
 export default function Navbar() {
   const [active, setActive] = useState(null)
   const [theme, setTheme] = useState('dark')
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark'
@@ -127,6 +120,7 @@ export default function Navbar() {
 
   const handleClick = (href) => {
     setActive(null)
+    setMobileOpen(false)
     const el = document.querySelector(href)
     if (el) el.scrollIntoView({ behavior: 'smooth' })
   }
@@ -134,7 +128,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="nav" onMouseLeave={() => setActive(null)}>
-        <a href="#" className="logo" onClick={() => setActive(null)}>
+        <a href="#" className="logo" onClick={() => { setActive(null); setMobileOpen(false) }}>
           <div className="logo-mark">
             <svg viewBox="0 0 18 18">
               <path d="M2 9h5M9 2v5M9 12v4M12 9h4" strokeLinecap="round" stroke="#b87333" fill="none" strokeWidth="2"/>
@@ -143,7 +137,7 @@ export default function Navbar() {
           </div>
           <div>
             <div className="logo-name">Business <span>Cradle</span></div>
-            <div className="logo-sub">Pvt. Ltd.</div>
+            <div className="logo-sub">Technology Pvt. Ltd.</div>
           </div>
         </a>
 
@@ -184,8 +178,24 @@ export default function Navbar() {
             )}
           </button>
           <button className="btn-nav" onClick={() => handleClick('#contact')}>Let's Talk</button>
+          <button className="hamburger" onClick={() => setMobileOpen(!mobileOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </nav>
+
+      {mobileOpen && (
+        <div className="mobile-menu">
+          <a href="#services" onClick={(e) => { e.preventDefault(); handleClick('#services') }}>Services</a>
+          <a href="#portfolio" onClick={(e) => { e.preventDefault(); handleClick('#portfolio') }}>Portfolio</a>
+          <a href="#about" onClick={(e) => { e.preventDefault(); handleClick('#about') }}>About</a>
+          <a href="#team" onClick={(e) => { e.preventDefault(); handleClick('#team') }}>Team</a>
+          <a href="/careers">Careers</a>
+          <a href="#contact" onClick={(e) => { e.preventDefault(); handleClick('#contact') }}>Contact</a>
+        </div>
+      )}
 
       {menuItems.map((item) => item.mega && (
         <div
@@ -219,9 +229,7 @@ export default function Navbar() {
                 <div className="mega-cta-card">
                   <div className="mega-cta-tag">Ready to start?</div>
                   <p className="mega-cta-txt">Tell us about your project and get a free proposal in 48 hours.</p>
-                  <button className="mega-cta-btn" onClick={() => handleClick('#contact')}>
-                    Get in Touch →
-                  </button>
+                  <button className="mega-cta-btn" onClick={() => handleClick('#contact')}>Get in Touch →</button>
                 </div>
               </div>
             </div>

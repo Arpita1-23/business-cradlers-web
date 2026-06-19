@@ -111,3 +111,62 @@
 }
 .theme-toggle svg { width: 16px; height: 16px; }
 .theme-toggle:hover { border-color: #b87333; color: #b87333; }
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 16px;
+    height: 60px;
+  }
+  .nav-links { display: none; }
+  .nav-tel { display: none; }
+  .nav-right { gap: 10px; }
+  .btn-nav { padding: 7px 14px; font-size: 11px; }
+  .theme-toggle { width: 32px; height: 32px; }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+  }
+  .hamburger span {
+    width: 22px; height: 2px;
+    background: #c4bbb0;
+    border-radius: 2px;
+    transition: all 0.3s;
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px; left: 0; right: 0;
+    background: #0b0f14;
+    border-bottom: 1px solid #1c2530;
+    padding: 20px 16px;
+    gap: 4px;
+    z-index: 199;
+    animation: slideDown 0.3s ease;
+  }
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .mobile-menu a {
+    font-size: 15px; color: #c4bbb0;
+    text-decoration: none; padding: 12px 0;
+    border-bottom: 1px solid #1c2530;
+    font-weight: 400;
+  }
+  .mobile-menu a:last-child { border-bottom: none; }
+  .mobile-menu a:hover { color: #b87333; }
+}
+
+@media (min-width: 769px) {
+  .hamburger { display: none; }
+  .mobile-menu { display: none !important; }
+}
