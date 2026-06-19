@@ -97,7 +97,7 @@ const menuItems = [
           ]
         },
         {
-          title: 'Life at Cradlers',
+          title: 'Life at Cradle',
           links: [
             { name: 'Our Culture', desc: 'How we work together' },
             { name: 'Learning & Growth', desc: 'We invest in our people' },
@@ -142,7 +142,7 @@ export default function Navbar() {
             </svg>
           </div>
           <div>
-            <div className="logo-name">Business <span>Cradlers</span></div>
+            <div className="logo-name">Business <span>Cradle</span></div>
             <div className="logo-sub">Pvt. Ltd.</div>
           </div>
         </a>

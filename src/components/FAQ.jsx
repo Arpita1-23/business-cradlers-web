@@ -3,7 +3,7 @@ import './FAQ.css'
 
 const faqs = [
   {
-    q: 'What kind of projects does Business Cradlers take on?',
+    q: 'What kind of projects does Business Cradle take on?',
     a: 'We work on web applications, mobile apps, AI-powered platforms and enterprise systems. Whether you have a startup idea or need to digitize an existing business — we can help.'
   },
   {
@@ -44,7 +44,7 @@ export default function FAQ() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const subject = encodeURIComponent(`Question from ${form.name} via Business Cradlers FAQ`)
+    const subject = encodeURIComponent(`Question from ${form.name} via Business Cradle FAQ`)
     const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nQuestion:\n${form.question}`)
     window.open(`mailto:bctpvtltd2025@gmail.com?subject=${subject}&body=${body}`)
     setSent(true)

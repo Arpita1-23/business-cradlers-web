@@ -15,7 +15,7 @@ export default function Footer() {
                 </svg>
               </div>
               <div>
-                <div className="footer-logo-name">Business <span>Cradlers</span></div>
+                <div className="footer-logo-name">Business <span>Cradle</span></div>
                 <div className="footer-logo-sub">Pvt. Ltd.</div>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <div className="footer-copy">
-            © 2025 Business Cradlers Technology Pvt. Ltd. · All rights reserved.
+            © 2025 Business Cradle Technology Pvt. Ltd. · All rights reserved.
           </div>
           <div className="footer-bottom-links">
             <a href="https://www.instagram.com/business_cradle_technology" target="_blank" rel="noreferrer">Instagram</a>

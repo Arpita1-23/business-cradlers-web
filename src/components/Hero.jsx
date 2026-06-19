@@ -23,7 +23,7 @@ export default function Hero() {
               <br/>
               <span className="hl-plain">Products</span>
               <br/>
-              <span className="hl-outline">With Cradlers</span>
+              <span className="hl-outline">With Cradle</span>
             </h1>
 
             <p className="hero-para">

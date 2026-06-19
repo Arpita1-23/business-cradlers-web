@@ -59,7 +59,7 @@ export default function About() {
               Trusted Across India
             </h2>
             <p className="about-desc">
-              Business Cradlers is a boutique software studio founded in 2020. We started with a simple belief — that great software should be accessible to every business, not just the big ones.
+              Business Cradle is a boutique software studio founded in 2020. We started with a simple belief — that great software should be accessible to every business, not just the big ones.
             </p>
             <p className="about-desc">
               Today we are a team of passionate developers, designers and AI engineers who have delivered 50+ products across mobile, web and AI platforms — for startups, enterprises and government-adjacent projects.
