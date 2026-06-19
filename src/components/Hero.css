@@ -208,6 +208,12 @@
   .btn-primary, .btn-ghost, .btn-whatsapp { width: 100%; justify-content: center; }
   .stats-row { flex-wrap: wrap; gap: 20px; }
   .stat-div { display: none; }
-  .service-grid { grid-template-columns: 1fr 1fr; }
+  .service-grid { display: none; }
   .marquee-strip { padding: 10px 0; overflow: hidden; }
+  .domain-label { display: none; }
+  .outcomes-label { padding-left: 0; }
+  .outcomes-list { padding-left: 0; }
+  .outcome-item { font-size: 13px; padding-left: 0; }
+  .avail-badge { display: none; }
+  .bg-glow { display: none; }
 }
