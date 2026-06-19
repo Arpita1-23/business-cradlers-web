@@ -120,7 +120,7 @@ export default function TechStack() {
         <h2 className="ts-title">Technologies We <em>Master</em></h2>
       </div>
 
-      <div className="ts-wall">
+      <div className="ts-wall" style={{overflow:'hidden',width:'100%'}}>
         <div className="ts-row ts-row-left">
           {[...row1, ...row1].map((t, i) => (
             <div className="ts-item" key={i}>

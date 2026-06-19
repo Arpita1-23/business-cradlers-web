@@ -123,7 +123,7 @@ export default function Hero() {
         </div>
       </section>
 
-      <div className="marquee-strip">
+      <div className="marquee-strip" style={{overflow:'hidden',width:'100%'}}>
         <div className="marquee-track">
           <span>React &amp; Next.js</span><span className="sep">◆</span>
           <span>Flutter</span><span className="sep">◆</span>
