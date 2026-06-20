@@ -70,10 +70,10 @@
 .ind-card:hover .ind-name { color: #b87333; }
 
 .ind-desc {
-  font-size: 11px;
-  color: #3a4550;
+  font-size: 12px;
+  color: #6a7585;
   line-height: 1.6;
-  font-weight: 300;
+  font-weight: 400;
   transition: color 0.2s;
 }
 .ind-card:hover .ind-desc { color: #6a7585; }

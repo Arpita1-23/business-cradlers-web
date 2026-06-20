@@ -21,9 +21,9 @@ function Home() {
       <Navbar />
       <Hero />
       <TechStack />
-      <Industries />
       <Services />
       <Portfolio />
+      <Industries />
       <About />
       <Team />
       <FAQ />
