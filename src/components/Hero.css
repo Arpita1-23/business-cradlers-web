@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: 55% 45%;
   width: 100%; padding: 0 40px; gap: 48px; align-items: center;
+  background: transparent;
 }
 .hero-left {
   padding: 72px 0 64px;
@@ -119,26 +120,47 @@
   letter-spacing: 1.5px; text-transform: uppercase; margin-top: 4px;
 }
 .hero-right {
-  padding: 72px 0 64px;
-  display: flex; flex-direction: column; gap: 0;
+  background: transparent;
+  padding: 52px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  position: relative;
 }
 .domain-label {
-  font-size: 11px; font-weight: 700;
-  letter-spacing: 2.5px; color: #b87333;
-  text-transform: uppercase; margin-bottom: 16px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: #b87333;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-shadow: 0 0 20px rgba(184,115,51,0.5);
 }
 .service-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 1px; background: #1c2530;
-  border: 1px solid #1c2530; border-radius: 10px;
-  overflow: hidden; margin-bottom: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(28,37,48,0.6);
+  border: 1px solid rgba(28,37,48,0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 28px;
+  backdrop-filter: blur(8px);
 }
 .srv-card-hero {
-  background: #0e1318; padding: 22px 20px;
-  display: flex; align-items: center; gap: 14px;
-  transition: background 0.2s; cursor: default;
+  background: rgba(14,19,24,0.7);
+  padding: 22px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: background 0.2s;
+  cursor: default;
+  backdrop-filter: blur(4px);
 }
-.srv-card-hero:hover { background: #111c24; }
+.srv-card-hero:hover {
+  background: rgba(17,28,36,0.85);
+}
 .srv-icon-hero {
   width: 38px; height: 38px;
   background: #0b0f14; border: 1px solid #1c2530;
@@ -150,10 +172,30 @@
   font-size: 15px; font-weight: 600;
   color: #c4bbb0; letter-spacing: 0.2px;
 }
+.avail-badge {
+  position: absolute;
+  top: 28px; right: 28px;
+  background: rgba(14,19,24,0.8);
+  border: 1px solid #2a3820;
+  border-radius: 20px;
+  padding: 7px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+  font-size: 11px;
+  color: var(--green);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(8px);
+}
 .outcomes-label {
-  font-size: 11px; font-weight: 700;
-  letter-spacing: 2.5px; color: #4a5560;
-  text-transform: uppercase; margin-bottom: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: #4a5560;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 .outcomes-list { display: flex; flex-direction: column; gap: 12px; }
 .outcome-item {
