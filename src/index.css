@@ -83,7 +83,7 @@ body {
 [data-theme="light"] .mega-overlay { background: rgba(26,18,8,0.2); }
 
 [data-theme="light"] .hero { background: #faf7f2; }
-[data-theme="light"] .hero-right { background: #f0ebe2; }
+[data-theme="light"] .hero-right { background: transparent; }
 [data-theme="light"] .hero-content { color: #1a1208; }
 [data-theme="light"] .hl-plain { color: #1a1208; }
 [data-theme="light"] .hl-italic { color: #b87333; }
@@ -100,15 +100,17 @@ body {
 [data-theme="light"] .stat-label { color: #9a8a78; }
 [data-theme="light"] .stat-div { background: #e0d8cc; }
 
-[data-theme="light"] .service-grid { background: #e0d8cc; border-color: #e0d8cc; }
-[data-theme="light"] .srv-card-hero { background: #ffffff; }
-[data-theme="light"] .srv-card-hero:hover { background: #f0ebe2; }
-[data-theme="light"] .srv-icon-hero { background: #faf7f2; border-color: #e0d8cc; }
-[data-theme="light"] .srv-name-hero { color: #1a1208; }
-[data-theme="light"] .domain-label { color: #b87333; }
-[data-theme="light"] .outcomes-label { color: #9a8a78; }
-[data-theme="light"] .outcome-item { color: #5a4a38; }
+[data-theme="light"] .service-grid { background: rgba(224,216,204,0.3); border-color: rgba(184,115,51,0.2); }
+[data-theme="light"] .srv-card-hero { background: rgba(255,255,255,0.3); }
+[data-theme="light"] .srv-card-hero:hover { background: rgba(184,115,51,0.1); }
+[data-theme="light"] .srv-icon-hero { background: rgba(250,247,242,0.6); border-color: rgba(184,115,51,0.3); }
+[data-theme="light"] .srv-name-hero { color: #1a1208; text-shadow: 0 0 10px rgba(255,255,255,0.8); }
+[data-theme="light"] .domain-label { color: #b87333; text-shadow: 0 0 10px rgba(255,255,255,0.8); }
+[data-theme="light"] .outcomes-label { color: #7a6a58; }
+[data-theme="light"] .outcome-item { color: #2e2010; text-shadow: 0 0 10px rgba(255,255,255,0.9); }
 [data-theme="light"] .outcome-dot { background: #b87333; }
+[data-theme="light"] .avail-badge { background: rgba(250,247,242,0.8); border-color: #2a3820; }
+[data-theme="light"] .avail-txt { color: #2a8a4a; }
 
 [data-theme="light"] .marquee-strip { background: #f0ebe2; border-color: #e0d8cc; }
 [data-theme="light"] .marquee-track span { color: #9a8a78; }
