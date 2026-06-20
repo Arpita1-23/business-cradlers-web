@@ -12,6 +12,7 @@ import Quote from './components/Quote'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Careers from './pages/Careers'
+import FloatingButtons from './components/FloatingButtons'
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
       <Quote />
       <Contact />
       <Footer />
+      <FloatingButtons />
     </>
   )
 }
