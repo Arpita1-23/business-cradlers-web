@@ -1,4 +1,5 @@
 import './Hero.css'
+import HeroCanvas from './HeroCanvas'
 
 export default function Hero() {
   return (
@@ -7,6 +8,7 @@ export default function Hero() {
 
         <div className="hero-bg">
           <div className="bg-glow"></div>
+          <HeroCanvas />
         </div>
 
         <div className="hero-content">
