@@ -1,6 +1,6 @@
 import './Portfolio.css'
-import shastrijImg from '../assets/projects/shastriji.jpg'
-import yojanaImg from '../assets/projects/yojanaai.jpg'
+import shastrijImg from '../assets/projects/shastri ji.jpeg'
+import yojanaImg from '../assets/projects/yojanaai.jpeg'
 
 const projects = [
   {
