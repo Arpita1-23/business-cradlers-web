@@ -197,8 +197,8 @@
 [data-theme="light"] .modal-overlay { background: rgba(26,18,8,0.5); }
 
 @media (max-width: 768px) {
-  .faq-inner { padding: 0 16px; }
-  .faq { padding: 60px 0; }
+  .faq { padding: 60px 0; overflow-x: hidden; }
+  .faq-inner { padding: 0 20px; }
   .faq-grid { grid-template-columns: 1fr; }
   .faq-side { position: static; }
   .faq-title { font-size: 36px; }

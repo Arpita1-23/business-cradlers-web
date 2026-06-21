@@ -166,11 +166,11 @@
 }
 
 @media (max-width: 768px) {
-  .services-inner { padding: 0 16px; }
-  .services { padding: 60px 0; }
+  .services { padding: 60px 0; overflow-x: hidden; }
+  .services-inner { padding: 0 20px; }
   .srv-grid { grid-template-columns: 1fr; gap: 12px; }
   .srv-title { font-size: 36px; }
-  .srv-bottom { flex-direction: column; gap: 16px; padding: 24px 16px; text-align: center; }
+  .srv-bottom { flex-direction: column; gap: 16px; padding: 24px 20px; text-align: center; }
 }
 
 /* ── Service Detail Modal ── */

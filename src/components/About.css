@@ -161,10 +161,24 @@
 }
 
 @media (max-width: 768px) {
-  .about-inner { padding: 0 16px; }
-  .about { padding: 60px 0; }
+  .about { padding: 60px 0; overflow-x: hidden; }
+  .about-inner { padding: 0 20px; overflow-x: hidden; }
   .about-top { grid-template-columns: 1fr; gap: 32px; }
   .about-title { font-size: 36px; }
-  .about-stats-grid { grid-template-columns: 1fr 1fr; }
+  .about-desc { font-size: 15px; }
+  .about-stats-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .about-stat-card { padding: 20px 16px; }
+  .asc-num { font-size: 36px; }
   .about-values-grid { grid-template-columns: 1fr; }
+  .about-founded { padding: 18px 20px; gap: 14px; flex-wrap: wrap; }
+  .about-founded-year { font-size: 40px; }
+  .about-vision-card, .about-approach-card { padding: 22px 20px; }
+  .about-status-card { flex-wrap: wrap; gap: 12px; padding: 18px 20px; }
+  .about-values { margin-bottom: 56px; }
+  .about-timeline { overflow-x: hidden; }
+  .timeline-track::before { left: 60px; }
+  .timeline-item { grid-template-columns: 60px 28px 1fr; }
+  .timeline-year { font-size: 15px; padding-right: 14px; }
+  .timeline-content { padding-left: 14px; }
+  .timeline-desc { font-size: 13px; }
 }

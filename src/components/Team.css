@@ -92,9 +92,9 @@
 }
 
 @media (max-width: 768px) {
-  .team-inner { padding: 0 16px; }
-  .team { padding: 60px 0; }
+  .team { padding: 60px 0; overflow-x: hidden; }
+  .team-inner { padding: 0 20px; }
   .team-grid { grid-template-columns: 1fr; gap: 12px; }
   .team-title { font-size: 36px; }
-  .team-bottom { flex-direction: column; gap: 16px; padding: 24px 16px; text-align: center; }
+  .team-bottom { flex-direction: column; gap: 16px; padding: 24px 20px; text-align: center; }
 }

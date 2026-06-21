@@ -90,11 +90,11 @@
 }
 
 @media (max-width: 768px) {
-  .contact-inner { padding: 0 16px; }
-  .contact { padding: 60px 0; }
+  .contact { padding: 60px 0; overflow-x: hidden; }
+  .contact-inner { padding: 0 20px; }
   .contact-grid { grid-template-columns: 1fr; }
   .contact-title { font-size: 36px; }
-  .contact-form-wrap { padding: 24px 16px; }
+  .contact-form-wrap { padding: 24px 20px; }
   .form-row { grid-template-columns: 1fr; }
   .form-chips { gap: 6px; }
   .form-chip { font-size: 11px; padding: 6px 10px; }

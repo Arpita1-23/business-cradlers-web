@@ -140,7 +140,7 @@
 }
 
 @media (max-width: 768px) {
-  .quote-inner { grid-template-columns: 1fr; gap: 32px; padding: 0 16px; }
+  .quote-inner { grid-template-columns: 1fr; gap: 32px; padding: 0 20px; overflow-x: hidden; }
   .quote-section { padding: 60px 0; }
   .quote-text { font-size: 22px; }
   .quote-mark { font-size: 80px; }

@@ -82,8 +82,8 @@
   .ind-grid { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 768px) {
-  .ind-inner { padding: 0 16px; }
-  .industries { padding: 60px 0; }
+  .industries { padding: 60px 0; overflow-x: hidden; }
+  .ind-inner { padding: 0 20px; }
   .ind-grid { grid-template-columns: repeat(3, 1fr); }
   .ind-title { font-size: 36px; }
   .ind-card { padding: 20px 12px; }
