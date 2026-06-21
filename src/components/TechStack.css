@@ -66,6 +66,8 @@
 
 .ts-row:hover { animation-play-state: paused; }
 
+.ts-mobile-grid { display: none; }
+
 @media(max-width: 960px) {
   .ts-title { font-size: 38px; }
 }
@@ -74,9 +76,14 @@
   .techstack { overflow: hidden; width: 100vw; max-width: 100vw; }
   .ts-header { padding: 0 16px; margin-bottom: 32px; }
   .ts-title { font-size: 28px; }
-  .ts-wall { width: 100%; overflow: hidden; }
-  .ts-row { animation: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0 16px; width: 100%; }
-  .ts-item { padding: 8px 12px; width: calc(50% - 4px); justify-content: flex-start; }
+  .ts-wall { display: none; }
+  .ts-mobile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 0 16px;
+  }
+  .ts-item { padding: 10px 14px; justify-content: flex-start; }
   .ts-name { font-size: 12px; }
   .ts-icon { width: 20px; height: 20px; flex-shrink: 0; }
   .ts-icon svg { width: 20px; height: 20px; }

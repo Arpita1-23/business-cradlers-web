@@ -120,6 +120,7 @@ export default function TechStack() {
         <h2 className="ts-title">Technologies We <em>Master</em></h2>
       </div>
 
+      {/* Desktop: animated marquee rows */}
       <div className="ts-wall" style={{overflow:'hidden',width:'100%'}}>
         <div className="ts-row ts-row-left">
           {[...row1, ...row1].map((t, i) => (
@@ -141,6 +142,18 @@ export default function TechStack() {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Mobile: static 2-column grid, each tech once */}
+      <div className="ts-mobile-grid">
+        {techs.map((t) => (
+          <div className="ts-item" key={t.name}>
+            <div className="ts-icon">
+              {svgIcons[t.name] || <span className="ts-emoji">{t.icon}</span>}
+            </div>
+            <span className="ts-name">{t.name}</span>
+          </div>
+        ))}
       </div>
     </section>
   )
