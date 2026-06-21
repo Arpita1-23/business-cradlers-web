@@ -81,7 +81,7 @@ export default function Portfolio() {
                     </svg>
                   </a>
                   {p.playstore && (
-                    <a href={p.playstore} target="_blank" rel="noreferrer" className="port-play-btn">
+                    <a href={p.playstore} target="_blank" rel="noopener noreferrer" className="port-play-btn">
                       <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
                         <path d="M3.18 23.76c.3.17.64.24.99.2l13.7-7.92-3.01-3.01-11.68 10.73zM.5 1.03C.19 1.4 0 1.96 0 2.69v18.62c0 .73.19 1.29.5 1.66l.09.08 10.43-10.43v-.25L.59.95.5 1.03zM20.7 10.75l-2.96-1.71-3.3 3.3 3.3 3.3 2.98-1.72c.85-.49.85-1.29-.02-1.17zM4.17.24L17.87 8.16l-3.01 3.01L3.18.44c.3-.04.64.03.99.2v-.4z"/>
                       </svg>

@@ -28,8 +28,8 @@
 
 /* ── Card ── */
 .port-card {
-  display: grid;
-  grid-template-columns: 1fr 420px;
+  display: flex;
+  flex-direction: row;
   background: #0e1318;
   border: 1px solid #1c2530;
   border-radius: 20px;
@@ -190,29 +190,36 @@
 
 /* ── Right: image ── */
 .port-card-right {
+  width: 320px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 48px 36px;
-  background: #080c11;
+  padding: 40px 28px;
+  background: #060a0f;
   border-left: 1px solid #1c2530;
   border-radius: 0 20px 20px 0;
   overflow: hidden;
 }
 
 .port-img-frame {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #0b0f14;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
 }
 
 .port-project-img {
-  width: 280px;
-  height: 280px;
+  width: 260px;
+  height: 260px;
   object-fit: cover;
-  border-radius: 18px;
+  object-position: center;
+  border-radius: 16px;
   border: 2px solid #1c2530;
+  display: block;
   transform: rotate(-2deg);
   transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
   box-shadow:
@@ -245,8 +252,8 @@
 @media (max-width: 960px) {
   .port-inner { padding: 0 24px; }
   .port-title { font-size: 42px; }
-  .port-card { grid-template-columns: 1fr 320px; }
-  .port-card-left { padding: 36px 36px; }
+  .port-card-right { width: 280px; padding: 32px 20px; }
+  .port-card-left { padding: 36px 32px; }
   .port-card-title { font-size: 30px; }
   .port-project-img { width: 220px; height: 220px; }
 }
@@ -256,25 +263,25 @@
   .port-inner { padding: 0 16px; }
   .port-title { font-size: 36px; }
   .port-card {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    flex-direction: column;
     overflow: hidden;
   }
   .port-card-right {
     order: -1;
+    width: 100%;
     border-left: none;
     border-bottom: 1px solid #1c2530;
     border-radius: 20px 20px 0 0;
-    padding: 32px 24px;
+    padding: 28px 24px;
   }
   .port-card-left {
-    padding: 28px 24px 32px;
+    padding: 24px 20px 28px;
     border-radius: 0 0 20px 20px;
   }
   .port-num { font-size: 64px; margin-bottom: 12px; }
   .port-card-title { font-size: 26px; }
   .port-card-desc { font-size: 14px; }
-  .port-project-img { width: 180px; height: 180px; transform: rotate(-2deg); }
+  .port-project-img { width: 180px; height: 180px; }
 }
 
 /* ── Light theme ── */
@@ -287,7 +294,8 @@
 [data-theme="light"] .port-card-desc { color: #5a4a38; }
 [data-theme="light"] .port-stack-tag { background: #faf7f2; border-color: #e0d8cc; color: #7a6a58; }
 [data-theme="light"] .port-year { color: #c0b8b0; }
-[data-theme="light"] .port-card-right { background: #f0ebe2; border-left-color: #e0d8cc; }
+[data-theme="light"] .port-card-right { background: #ebe5db; border-left-color: #e0d8cc; }
+[data-theme="light"] .port-img-frame { background: #f0ebe2; }
 [data-theme="light"] .port-bottom { border-color: #e0d8cc; }
 [data-theme="light"] .port-bottom-txt { color: #9a8a78; }
 [data-theme="light"] .port-project-img { border-color: #e0d8cc; }
