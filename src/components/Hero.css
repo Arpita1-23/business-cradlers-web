@@ -272,4 +272,5 @@
   .outcome-item { font-size: 13px; padding-left: 0; }
   .avail-badge { display: none; }
   .bg-glow { display: none; }
+  .hero-bg canvas { opacity: 0.3 !important; }
 }
