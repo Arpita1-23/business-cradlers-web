@@ -113,7 +113,7 @@ export default function Hero() {
             <div className="outcomes-list">
               <div className="outcome-item">
                 <span className="outcome-dot"></span>
-                YojanaAI — AI govt scheme platform live in production
+                Yojna AI — AI govt scheme platform live in production
               </div>
               <div className="outcome-item">
                 <span className="outcome-dot"></span>

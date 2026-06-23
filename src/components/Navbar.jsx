@@ -38,7 +38,7 @@ const menuItems = [
         {
           title: 'Live Products',
           links: [
-            { name: 'YojanaAI', desc: 'AI govt scheme platform' },
+            { name: 'Yojna AI', desc: 'AI govt scheme platform' },
           ]
         },
         {
