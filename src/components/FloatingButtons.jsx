@@ -29,7 +29,7 @@ export default function FloatingButtons() {
       </a>
 
       <a
-        href="https://www.youtube.com/@businesscradletechnology"
+        href="https://youtube.com/@businesscradles?si=M4hKVNl0jRRAwz9Q"
         target="_blank"
         rel="noreferrer"
         className="float-btn float-yt"
