@@ -4,15 +4,8 @@
   background: #0b0f14; border-bottom: 1px solid #1c2530;
   position: sticky; top: 0; z-index: 200;
 }
-.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.logo-mark {
-  width: 36px; height: 36px; border: 1.5px solid #b87333;
-  border-radius: 8px; display: flex; align-items: center; justify-content: center;
-}
-.logo-mark svg { width: 18px; height: 18px; }
-.logo-name { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 700; color: #e6ddd0; line-height: 1; }
-.logo-name span { color: #b87333; }
-.logo-sub { font-size: 9px; color: #4a5560; letter-spacing: 2px; text-transform: uppercase; margin-top: 2px; }
+.logo { display: flex; align-items: center; text-decoration: none; }
+.logo-img { height: 40px; width: auto; display: block; object-fit: contain; }
 
 .nav-links { display: flex; gap: 4px; list-style: none; }
 .nav-item { position: relative; }

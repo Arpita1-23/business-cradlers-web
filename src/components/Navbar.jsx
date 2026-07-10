@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Navbar.css'
+import logoImg from '../assets/logo.jpeg'
 
 const menuItems = [
   {
@@ -129,16 +130,7 @@ export default function Navbar() {
     <>
       <nav className="nav" onMouseLeave={() => setActive(null)}>
         <a href="#" className="logo" onClick={() => { setActive(null); setMobileOpen(false) }}>
-          <div className="logo-mark">
-            <svg viewBox="0 0 18 18">
-              <path d="M2 9h5M9 2v5M9 12v4M12 9h4" strokeLinecap="round" stroke="#b87333" fill="none" strokeWidth="2"/>
-              <circle cx="9" cy="9" r="1.8" fill="#b87333"/>
-            </svg>
-          </div>
-          <div>
-            <div className="logo-name">Business <span>Cradle</span></div>
-            <div className="logo-sub">Technology Pvt. Ltd.</div>
-          </div>
+          <img src={logoImg} alt="Business Cradle" className="logo-img" />
         </a>
 
         <ul className="nav-links">
