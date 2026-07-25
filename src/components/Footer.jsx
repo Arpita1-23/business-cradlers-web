@@ -1,4 +1,5 @@
 import './Footer.css'
+import logoImg from '../assets/logo.jpeg'
 
 export default function Footer() {
   return (
@@ -8,16 +9,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo">
-              <div className="footer-logo-mark">
-                <svg viewBox="0 0 18 18">
-                  <path d="M2 9h5M9 2v5M9 12v4M12 9h4" stroke="#b87333" strokeWidth="2" strokeLinecap="round" fill="none"/>
-                  <circle cx="9" cy="9" r="1.8" fill="#b87333"/>
-                </svg>
-              </div>
-              <div>
-                <div className="footer-logo-name">Business <span>Cradle</span></div>
-                <div className="footer-logo-sub">Pvt. Ltd.</div>
-              </div>
+              <img src={logoImg} alt="Business Cradle" className="footer-logo-img" />
             </div>
             <p className="footer-tagline">
               Building digital products that scale — from Jabalpur to the world.
