@@ -33,7 +33,7 @@ export default function Contact() {
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label">Phone Number</label>
-                  <input type="tel" className="form-input" placeholder="+91 8962-900-701"/>
+                  <input type="tel" className="form-input" placeholder="+91 98765 43210"/>
                 </div>
                 <div className="form-group">
                   <label className="form-label">Budget Range</label>
