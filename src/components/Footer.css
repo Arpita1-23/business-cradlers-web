@@ -4,7 +4,7 @@
 .footer-top { display:grid; grid-template-columns:320px 1fr; gap:80px; padding:72px 0 56px; border-bottom:1px solid #1c2530; }
 
 .footer-logo { margin-bottom:20px; }
-.footer-logo-img { height:40px; width:auto; display:block; object-fit:contain; }
+.footer-logo-img { height:40px; width:auto; display:block; object-fit:contain; background:transparent; mix-blend-mode:screen; }
 .footer-tagline { font-size:14px; color:#4a5a6a; line-height:1.8; font-weight:300; margin-bottom:24px; max-width:260px; }
 
 .footer-whatsapp {
