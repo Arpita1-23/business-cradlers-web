@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Navbar.css'
-import logoImg from '../assets/logo.jpeg'
+import logoImg from '../assets/logo.png'
 
 const menuItems = [
   {
