@@ -25,7 +25,7 @@ const projects = [
     subtitle: 'Government Scheme Discovery Platform',
     desc: 'An AI-powered platform that helps Indian citizens discover government schemes they are eligible for. Built with Django, Next.js and Claude API — serving users across all states with smart recommendations.',
     stack: ['Next.js', 'Django', 'Claude API', 'PostgreSQL', 'Redis'],
-    link: 'https://yojana-tau.vercel.app',
+    link: 'https://www.yojnaai.com/',
     playstore: null,
     status: 'Live',
     year: '2024',

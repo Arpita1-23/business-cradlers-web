@@ -55,7 +55,7 @@ export default function Footer() {
               <div className="footer-col-title">Projects</div>
               <ul className="footer-col-links">
                 <li><a href="https://shashtri.onrender.com" target="_blank" rel="noreferrer">Shastri Ji</a></li>
-                <li><a href="https://yojana-tau.vercel.app" target="_blank" rel="noreferrer">Yojna AI</a></li>
+                <li><a href="https://www.yojnaai.com/" target="_blank" rel="noreferrer">Yojna AI</a></li>
               </ul>
               <div className="footer-col-title" style={{marginTop:'28px'}}>Location</div>
               <div className="footer-location">
