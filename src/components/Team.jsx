@@ -2,22 +2,6 @@ import './Team.css'
 
 const team = [
   {
-    name: 'Danish Khan',
-    role: 'Full Stack Developer',
-    desc: 'Leads backend architecture and API development. Expert in Django REST, PostgreSQL and cloud deployments.',
-    skills: ['Django', 'PostgreSQL', 'React', 'DevOps'],
-    initial: 'DK',
-    color: '#b87333'
-  },
-  {
-    name: 'Ayush Kachhi',
-    role: 'Mobile App Developer',
-    desc: 'Builds cross-platform mobile experiences with Flutter. Handles app store deployments and native integrations.',
-    skills: ['Flutter', 'Firebase', 'Android', 'iOS'],
-    initial: 'AK',
-    color: '#6a9fd8'
-  },
-  {
     name: 'Lakshita Shrivastava',
     role: 'Frontend Developer',
     desc: 'Crafts pixel-perfect UIs with React and Next.js. Focuses on performance, accessibility and great user experience.',
